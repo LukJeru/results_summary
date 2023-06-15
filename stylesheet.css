@@ -20,16 +20,17 @@ body{
   grid-template-columns: 50% 50%;
 }
 
-.left{
+.box-1{
   grid-row: 1/ span 6;
   grid-column:1 / span 1;
   background-color: hsl(252, 100%, 67%);
   display: grid;
   border: none;
   border-radius: 20px;
+  text-align: center;
 }
 
-.right{
+.box-2{
   grid-row: 1/ span 6;;
   grid-column: 2/ span 1;
   background-color: grey;
@@ -37,6 +38,7 @@ body{
   border: none;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  text-align: center;
 }
 
 .left h2{
@@ -68,27 +70,51 @@ body{
   grid-row: 2/ span 1;
   grid-column:2 / span 1;
   display: inline-flex;
+  background-color: hsla(0, 100%, 67%, 0.25);
+}
+.reaction .left{
+  color: hsl(0, 100%, 67%);
 }
 
 .memory{
   grid-row: 3/ span 1;
   grid-column:2 / span 1;
   display: inline-flex;
+  justify-content: space-between;
+  background-color: hsla(39, 100%, 56%, 0.25);
+}
+
+.memory .left{
+  color: hsl(39, 100%, 56%);
 }
 
 .verbal{
   grid-row: 4/ span 1;
   grid-column:2 / span 1;
   display: inline-flex;
+  background-color: hsla(166, 100%, 37%, 0.25);;
+}
+
+.verbal .left{
+  color: hsl(166, 100%, 37%);
 }
 
 .visual{
   grid-row: 5/ span 1;
   grid-column:2 / span 1;
   display: inline-flex;
+  background-color: hsla(234, 85%, 45%, 0.25);
 }
 
-.right .button{
+.visual .left{
+  color: hsl(234, 85%, 45%);
+}
+
+.box-2 .button{
   grid-row: 6/ span 1;
   grid-column:2 / span 1;
+  height: 1rem;
+  width: 80%;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
 }
