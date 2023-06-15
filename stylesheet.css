@@ -1,0 +1,94 @@
+body{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  font-size: 18px;
+  font-family: Hanken;
+}
+
+@font-face {
+  font-family: Hanken;
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.grid{
+  width: 600px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 20% repeat(4, 1fr) 20%;
+  grid-template-columns: 50% 50%;
+}
+
+.left{
+  grid-row: 1/ span 6;
+  grid-column:1 / span 1;
+  background-color: hsl(252, 100%, 67%);
+  display: grid;
+  border: none;
+  border-radius: 20px;
+}
+
+.right{
+  grid-row: 1/ span 6;;
+  grid-column: 2/ span 1;
+  background-color: grey;
+  display: grid;
+  border: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.left h2{
+  grid-row: 1/ span 1;
+  grid-column:1 / span 1
+}
+
+.score{
+  grid-row: 2/ span 3;
+  grid-column:1 / span 1
+}
+
+.left h1{
+  grid-row: 5/ span 1;
+  grid-column:1 / span 1
+}
+
+.left p{
+  grid-row: 6/ span 1;
+  grid-column:1 / span 1
+}
+
+.rigth h2{
+  grid-row: 1/ span 1;
+  grid-column:2 / span 1
+}
+
+.reaction{
+  grid-row: 2/ span 1;
+  grid-column:2 / span 1;
+  display: inline-flex;
+}
+
+.memory{
+  grid-row: 3/ span 1;
+  grid-column:2 / span 1;
+  display: inline-flex;
+}
+
+.verbal{
+  grid-row: 4/ span 1;
+  grid-column:2 / span 1;
+  display: inline-flex;
+}
+
+.visual{
+  grid-row: 5/ span 1;
+  grid-column:2 / span 1;
+  display: inline-flex;
+}
+
+.right .button{
+  grid-row: 6/ span 1;
+  grid-column:2 / span 1;
+}
