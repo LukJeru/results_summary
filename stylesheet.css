@@ -5,6 +5,7 @@ body{
   top: 200px;
   font-size: 18px;
   font-family: Hanken;
+  background: white;
 }
 
 @font-face {
@@ -23,7 +24,7 @@ body{
 .box-1{
   grid-row: 1/ span 6;
   grid-column:1 / span 1;
-  background-color: hsl(252, 100%, 67%);
+  background-color: hsl(241, 59%, 78%);
   display: grid;
   border: none;
   border-radius: 20px;
@@ -33,12 +34,13 @@ body{
 .box-2{
   grid-row: 1/ span 6;;
   grid-column: 2/ span 1;
-  background-color: grey;
+  background-color: white;
   display: grid;
   border: none;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   text-align: center;
+  box-shadow: 10px 10px 20px 3px rgba(183, 179, 243, 0.2);
 }
 
 .left h2{
