@@ -35,17 +35,20 @@ body{
   grid-row: 1/ span 6;;
   grid-column: 2/ span 1;
   background-color: white;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  text-align: center;
   box-shadow: 10px 10px 20px 3px rgba(183, 179, 243, 0.2);
+  justify-items: center;
 }
 
 .left h2{
   grid-row: 1/ span 1;
-  grid-column:1 / span 1
+  grid-column:1 / span 1;
 }
 
 .score{
@@ -64,26 +67,29 @@ body{
 }
 
 .rigth h2{
-  grid-row: 1/ span 1;
-  grid-column:2 / span 1
+  position: absolute;
+  left: 30px;
 }
 
 .reaction{
-  grid-row: 2/ span 1;
-  grid-column:2 / span 1;
   display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
   background-color: hsla(0, 100%, 67%, 0.25);
+  border: none;
+  border-radius: 15px;
 }
 .reaction .left{
   color: hsl(0, 100%, 67%);
 }
 
 .memory{
-  grid-row: 3/ span 1;
-  grid-column:2 / span 1;
   display: inline-flex;
+  width: 80%;
   justify-content: space-between;
   background-color: hsla(39, 100%, 56%, 0.25);
+  border: none;
+  border-radius: 15px;
 }
 
 .memory .left{
@@ -91,10 +97,12 @@ body{
 }
 
 .verbal{
-  grid-row: 4/ span 1;
-  grid-column:2 / span 1;
   display: inline-flex;
-  background-color: hsla(166, 100%, 37%, 0.25);;
+  width: 80%;
+  justify-content: space-between;
+  background-color: hsla(166, 100%, 37%, 0.25);
+  border: none;
+  border-radius: 15px;
 }
 
 .verbal .left{
@@ -102,10 +110,12 @@ body{
 }
 
 .visual{
-  grid-row: 5/ span 1;
-  grid-column:2 / span 1;
   display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
   background-color: hsla(234, 85%, 45%, 0.25);
+  border: none;
+  border-radius: 15px;
 }
 
 .visual .left{
@@ -113,10 +123,22 @@ body{
 }
 
 .box-2 .button{
-  grid-row: 6/ span 1;
-  grid-column:2 / span 1;
   height: 1rem;
   width: 80%;
   background-color: hsl(224, 30%, 27%);
   color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.left img{
+  display:inline-block;
+  margin-right: 6px;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.left p{
+  display:inline-block;
 }
