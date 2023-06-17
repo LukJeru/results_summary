@@ -66,9 +66,9 @@ body{
   grid-column:1 / span 1
 }
 
-.rigth h2{
-  position: absolute;
-  left: 30px;
+.box-2 h2{
+  position: relative;
+  right: 56px;
 }
 
 .reaction{
@@ -78,6 +78,8 @@ body{
   background-color: hsla(0, 100%, 67%, 0.25);
   border: none;
   border-radius: 15px;
+  position: relative;
+  bottom: 1rem;
 }
 .reaction .left{
   color: hsl(0, 100%, 67%);
@@ -90,6 +92,8 @@ body{
   background-color: hsla(39, 100%, 56%, 0.25);
   border: none;
   border-radius: 15px;
+  position: relative;
+  bottom: 1.2rem;
 }
 
 .memory .left{
@@ -103,6 +107,8 @@ body{
   background-color: hsla(166, 100%, 37%, 0.25);
   border: none;
   border-radius: 15px;
+  position: relative;
+  bottom: 1.4rem;
 }
 
 .verbal .left{
@@ -116,6 +122,8 @@ body{
   background-color: hsla(234, 85%, 45%, 0.25);
   border: none;
   border-radius: 15px;
+  position: relative;
+  bottom: 1.4rem;
 }
 
 .visual .left{
@@ -123,12 +131,17 @@ body{
 }
 
 .box-2 .button{
-  height: 1rem;
   width: 80%;
   background-color: hsl(224, 30%, 27%);
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 30px;
+  align-content: center;
+  position: relative;
+  bottom: 1.4rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .left img{
